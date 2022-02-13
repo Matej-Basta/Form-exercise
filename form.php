@@ -1,12 +1,3 @@
-<?php
-require_once "DBBlackbox.php";
-
-var_dump($_POST);
-
-$id = insert($_POST);
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +7,7 @@ $id = insert($_POST);
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="POST">
+    <form action="request-handler.php" method="POST">
         <input type="text" name="title" placeholder="title"><br>   
         <input type="number" name="year" placeholder="year of release"><br>   
         <select name="genre">
